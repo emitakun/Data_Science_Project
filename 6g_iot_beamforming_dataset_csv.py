@@ -111,8 +111,6 @@ results_df = pd.DataFrame({
 print("Actual vs Predicted Values")
 results_df.head(20)
 
-pip install openpyxl
-
 from IPython.display import FileLink
 results_df.to_csv("results.csv", index=False)
 FileLink("results.csv")
