@@ -111,7 +111,14 @@ results_df = pd.DataFrame({
 print("Actual vs Predicted Values")
 results_df.head(20)
 
-from IPython.display import FileLink
-results_df.to_csv("results.csv", index=False)
-FileLink("results.csv")
+#from IPython.display import FileLink
+#results_df.to_csv("results.csv", index=False)
+#FileLink("results.csv")
+csv = df.to_csv(index=False).encode("utf-8")
 
+st.download_button(
+    label="📥 Download Results as CSV",
+    data=csv,
+    file_name="beamforming_results.csv",
+    mime="text/csv",
+)
