@@ -53,7 +53,6 @@ ax.scatter(x=df['Number of Antennas'], y=df['Beamforming Gain (dB)'], color='pur
 ax.set_xlabel('Number of Antennas')
 ax.set_ylabel('Beamforming Gain (dB)')
 ax.set_title('Number of Antennas vs. Beamforming Gain (dB)')
-plt.show()
 st.pyplot(fig)
 
 fig, ax = plt.subplots(figsize=(10,8))
@@ -61,7 +60,6 @@ ax.scatter(df['Number of Antennas'], df['Beamforming Gain (dB)'], color='purple'
 ax.set_xlabel('Number of Antennas')
 ax.set_ylabel('Beamforming Gain (dB)')
 ax.set_title('Number of Antennas vs. Beamforming Gain (dB)')
-plt.show()
 st.pyplot(fig)
 
 corr = df.corr()
@@ -70,7 +68,6 @@ sns.heatmap(corr, annot=True, cmap='coolwarm', fmt=".2f", annot_kws={"size":8})
 plt.xticks(rotation=45, ha='right')
 plt.yticks(rotation=0)
 plt.title("Correlation Heatmap", fontsize=16)
-plt.show()
 st.pyplot(fig)
 
 from sklearn.ensemble import RandomForestClassifier
