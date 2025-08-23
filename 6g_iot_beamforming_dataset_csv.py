@@ -128,9 +128,10 @@ st.sidebar.info("This application estimates if beamforming is optimized or not i
 
 input_data = {}
 
-for x in x.columns:
+input_data = {}
+for col in x.columns:
     if df[col].dtype in [np.int64, np.float64]:
-        input_data[col] = st.number_input(f"{col}", value = float(df[col].mean()))
+        input_data[col] = st.number_input(f"{col}", value=float(df[col].mean()))
     else:
         input_data[col] = st.text_input(f"{col}")
 input_df = pd.DataFrame([input_data])
