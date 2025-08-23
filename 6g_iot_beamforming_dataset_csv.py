@@ -53,7 +53,8 @@ ax.scatter(x=df['Number of Antennas'], y=df['Beamforming Gain (dB)'], color='pur
 ax.set_xlabel('Number of Antennas')
 ax.set_ylabel('Beamforming Gain (dB)')
 ax.set_title('Number of Antennas vs. Beamforming Gain (dB)')
-st.pyplot(plt)
+st.pyplot(fig)
+
 
 plt.figure(figsize=(10,8))
 plt.scatter(x = df['Number of Antennas'], y = df['Beamforming Gain (dB)'], color = 'purple')
