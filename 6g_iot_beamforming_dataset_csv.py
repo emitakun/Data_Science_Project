@@ -122,3 +122,4 @@ st.download_button(
     file_name="beamforming_results.csv",
     mime="text/csv",
 )
+st.sidebar.header("About")
