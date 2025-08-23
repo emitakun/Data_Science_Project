@@ -54,6 +54,7 @@ plt.xlabel('Obstacle Density')
 plt.ylabel('Transmit Power (dBm)')
 plt.title('Transmit Power vs. Obstacle Density')
 plt.show()
+st.pyplot(fig)
 
 plt.figure(figsize=(10,8))
 plt.scatter(x = df['Number of Antennas'], y = df['Beamforming Gain (dB)'], color = 'purple')
@@ -70,6 +71,7 @@ plt.xticks(rotation=45, ha='right')
 plt.yticks(rotation=0)
 plt.title("Correlation Heatmap", fontsize=16)
 plt.show()
+st.pyplot(fig)
 
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split, GridSearchCV
