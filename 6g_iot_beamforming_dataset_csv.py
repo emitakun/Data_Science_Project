@@ -124,7 +124,9 @@ st.download_button(
 )
 st.sidebar.header("About")
 st.sidebar.info("This application estimates if beamforming is optimized or not in a 6G signal")
-input_data {}
+
+input_data = {}
+
 for x in x.columns:
     if df[col].dtype in [np.int64, np.float64]:
         input_data[col] = st.number_input(f"{col}", value = float(df[col].mean()))
