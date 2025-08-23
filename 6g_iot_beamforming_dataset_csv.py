@@ -62,6 +62,7 @@ ax.set_ylabel('Beamforming Gain (dB)')
 ax.set_title('Number of Antennas vs. Beamforming Gain (dB)')
 st.pyplot(fig)
 
+ig, ax = plt.subplots(figsize=(10,8))
 corr = df.corr()
 plt.figure(figsize=(14, 10))
 sns.heatmap(corr, annot=True, cmap='coolwarm', fmt=".2f", annot_kws={"size":8})
