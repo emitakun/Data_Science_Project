@@ -126,6 +126,7 @@ st.download_button(
 st.sidebar.header("About")
 st.sidebar.info("This application estimates if beamforming is optimized or not in a 6G signal")
 
+st.subheader("Input variables for prediction")
 input_data = {}
 
 input_data = {}
