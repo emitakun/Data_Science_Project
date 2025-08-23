@@ -61,7 +61,7 @@ plt.xlabel('Number of Antennas')
 plt.ylabel('Beamforming Gain (dB)')
 plt.title('Number of Antennas vs. Beamforming Gain (dB)')
 plt.show()
-st.pyplot(fig)
+st.pyplot(plt)
 
 corr = df.corr()
 plt.figure(figsize=(14, 10))
