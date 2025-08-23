@@ -123,3 +123,4 @@ st.download_button(
     mime="text/csv",
 )
 st.sidebar.header("About")
+st.sidebar.info("This application estimates if beamforming is optimized or not in a 6G signal)
