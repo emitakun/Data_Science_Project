@@ -48,12 +48,11 @@ plt.show()
 df.columns.tolist()
 
 #Bivariate analysis
-plt.figure(figsize=(10,8))
-plt.scatter(y = df['Transmit Power (dBm)'], x = df['Obstacle Density'])
-plt.xlabel('Obstacle Density')
-plt.ylabel('Transmit Power (dBm)')
-plt.title('Transmit Power vs. Obstacle Density')
-plt.show()
+fig, ax = plt.subplots(figsize=(10,8))
+ax.scatter(x=df['Number of Antennas'], y=df['Beamforming Gain (dB)'], color='purple')
+ax.set_xlabel('Number of Antennas')
+ax.set_ylabel('Beamforming Gain (dB)')
+ax.set_title('Number of Antennas vs. Beamforming Gain (dB)')
 st.pyplot(fig)
 
 plt.figure(figsize=(10,8))
